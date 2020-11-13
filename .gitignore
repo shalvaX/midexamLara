@@ -80,7 +80,7 @@ Homestead.json
 .phpunit.result.cache
 #Laravel Specific files
 /vendor
-.env
+
 /public/.htaccess
 /storage
 storage/*.key
