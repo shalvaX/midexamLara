@@ -21,10 +21,10 @@ Route::get('/companies/{id}/edit', '\App\Http\Controllers\CompanyController@edit
 Route::post('/companies/{id}/update', '\App\Http\Controllers\CompanyController@updateCompany')->name('companies.update');
 Route::post('/companies/delete', '\App\Http\Controllers\CompanyController@deleteCompany')->name('companies.delete');
 
-Route::get('/employees/all', '\App\Http\Controllers\EmployeeController@getAllProducts')
+Route::get('/employees/all', '\App\Http\Controllers\EmployeeController@getAllEmployees')
     ->name('employees.all')
     ->middleware('guest');
-Route::post('/employees/save', '\App\Http\Controllers\EmployeeController@saveProduct')->name('employees.save');
-Route::get('/employees/{id}/edit', '\App\Http\Controllers\EmployeeController@editProduct')->name('employees.edit');
-Route::post('/employees/{id}/update', '\App\Http\Controllers\EmployeeController@updateProduct')->name('employees.update');
-Route::post('/employees/delete', '\App\Http\Controllers\EmployeeController@deleteProduct')->name('employees.delete');
+Route::post('/employees/save', '\App\Http\Controllers\EmployeeController@saveEmployee')->name('employees.save');
+Route::get('/employees/{id}/edit', '\App\Http\Controllers\EmployeeController@editEmployee')->name('employees.edit');
+Route::post('/employees/{id}/update', '\App\Http\Controllers\EmployeeController@updateEmployee')->name('employees.update');
+Route::post('/employees/delete', '\App\Http\Controllers\EmployeeController@deleteEmployee')->name('employees.delete');

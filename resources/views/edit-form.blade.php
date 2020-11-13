@@ -10,6 +10,7 @@
         </ul>
     </nav>
     <nav>
+
         <form action="{{ route('companies.update', ['id' => $company->id]) }}" method="POST">
             @csrf
             <ul>
